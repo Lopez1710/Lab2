@@ -33,7 +33,9 @@ class MainActivity : AppCompatActivity() {
             Nombre.add(edt_Nombre.text.toString())
             Edad.add(edt_edad.text.toString())
             Departamento.add(edt_Departamento.text.toString())
-
+            edt_Nombre.setText("")
+            edt_edad.setText("")
+            edt_Departamento.setText("")
             var adaptador: ArrayAdapter<String> = ArrayAdapter<String>(this, R.layout.lista, Nombre)
             lv_lista?.adapter = adaptador
 
